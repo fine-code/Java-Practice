@@ -5,6 +5,7 @@ public class MagicDates extends GaddisChallenges {
     private int userYear;
 
     private int[] numDaysInMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
     public void start() {
         print("Ready for some magic? Let's see if you can guess a Magic Date! ");
         
@@ -25,7 +26,7 @@ public class MagicDates extends GaddisChallenges {
         else {
             print("That day is invalid");
         }
-        
+
         print("Enter a two-digit year: (Example: 08 for 2008");
         tempYear = scan.nextInt();
         if (tempYear.toString().length() == 2) {
@@ -39,7 +40,7 @@ public class MagicDates extends GaddisChallenges {
 
     }
 
-    private calculateMagic() {
+    private void calculateMagic() {
         return (userMonth * userDay == userYear);
     }
 }
