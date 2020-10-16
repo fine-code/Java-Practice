@@ -6,17 +6,19 @@ public class GaddisChallenges {
 
     public static void main(String[] args) {
         print("Starting Chapter 3 Challenges from the Gaddis book!");
+        
         print("Question 1: Roman Numeral Converter");
-        romanNumeralConverter();
+        RomanNumeralConverter rmc = new RomanNumeralConverter();
+        rmc.start();
+
+        print("Question 2: Magic Dates");
+        MagicDates mc = new MagicDates();
+        mc.start()
     }
 
     private void print(String text) {
         System.out.println(text);
     }
 
-    private void romanNumeralConverter() {
-        print("Enter a number within the range of 1 through 10");
-        int userNumber = scan.nextInt();
-        
-    }
+   
 }
