@@ -35,6 +35,21 @@ public class LetterGrades {
     }
 
     private void calculateLetterGrade() {
-        
+        if (average >= 90) {
+            letterGrade = 'A';
+        }
+        else if (average >= 80) {
+            letterGrade = 'B';
+        }
+        else if (average >= 70) {
+            letterGrade = 'C';
+        }
+        else if (average >= 60) {
+            letterGrade = 'D';
+        }
+        else {
+            letterGrade = 'F';
+        }
+
     }
 }
